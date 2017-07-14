@@ -1,15 +1,7 @@
-var ClozeCard = function (cloze,partial,fullText){
-	this.cloze = cloze;
-	this.partial = partial;
+var ClozeCard = function(fullText, cloze) {
 	this.fullText = fullText;
-}
+	this.cloze = cloze;
+    }
 
-var AppleCloze = new ClozeCard ("Apple","...was founded in 1976", "Apple was founded in 1976.");
-var brokenCloze = new ClozeCard("This doesn't work", "oops");
-
-console.log(AppleCloze.cloze);
-console.log(AppleCloze.partial);
-console.log(AppleCloze.fullText);
 
 module.exports = ClozeCard;
-
